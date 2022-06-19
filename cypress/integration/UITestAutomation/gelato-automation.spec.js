@@ -6,6 +6,7 @@ const TestData = require('../../testdata/testdata.json');
 const HomePage = require('../../pageobjects/home.json');
 const LoginPage = require('../../pageobjects/login.json');
 const DashboardPage = require('../../pageobjects/dashboard.json');
+const {I_GetContainsText} = require("../../helpers/common");
 
 describe('example to-do app', () => {
   beforeEach(() => {
@@ -23,7 +24,7 @@ describe('example to-do app', () => {
     I.Fill(LoginPage.userSignIn.txt_Username,TestData.user.email);
     I.Fill(LoginPage.userSignIn.txt_Password,TestData.user.password);
     I.Click(LoginPage.userSignIn.btn_LogIn);
-    cy.xpath('//*[contains(text(),"Welcome '+(TestData.user.name)+'")]').should('be.visible');
+    I_GetContainsText("Welcome "+(TestData.user.name)).should('be.visible');
     I.Click(DashboardPage.userInfo.lbl_UserInfo);
     I.Click(DashboardPage.userInfo.btn_SingOut);
     I.GetElement(LoginPage.userSignIn.lbl_Title).should('contains.text', TestData.user.title);
