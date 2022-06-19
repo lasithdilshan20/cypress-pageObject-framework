@@ -1,0 +1,23 @@
+{
+  "name": "gelatoautomation",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://lasith_dilshan@bitbucket.org/lasitha-wijenayake-gelato-assignment/gelato_qa_assignment.git"
+  },
+  "author": "Lasitha Wijenayake",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/lasitha-wijenayake-gelato-assignment/gelato_qa_assignment/issues"
+  },
+  "homepage": "https://bitbucket.org/lasitha-wijenayake-gelato-assignment/gelato_qa_assignment#readme",
+  "devDependencies": {
+    "cypress": "9.6.0",
+    "cypress-xpath": "^1.6.2"
+  }
+}
