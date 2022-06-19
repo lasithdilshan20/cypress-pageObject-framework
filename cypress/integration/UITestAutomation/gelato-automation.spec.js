@@ -14,7 +14,7 @@ const OrderPage = require('../../pageobjects/orders.json');
 const {I_GetContainsText, I_LoginToApplication} = require("../../helpers/common");
 const {GetIFrameElement} = require("../../testbase/commandBase");
 
-describe('example to-do app', () => {
+describe('Gelato Test Automation', () => {
   before(() => {
     I.Open(baseUrl);
     I_LoginToApplication(TestData.user.email, TestData.user.password);
