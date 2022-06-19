@@ -4,5 +4,11 @@
   "txt_name": "//input[@name=\"name\" and @placeholder=\"Store name\"]",
   "btn_AddStore": "//button[contains(text(),'Add store')]",
   "lbl_StoreTitle": "div.page-title",
-  "btn_AddProduct": "(//button[contains(text(),\"Add product\")])[1]"
+  "btn_AddProduct": "(//button[contains(text(),\"Add product\")])[1]",
+  "lbl_AddedProductTitle": "div.product-title",
+  "btn_More": "button.menu-button",
+  "lbl_EditStore": "//*[contains(text(),'Edit store details')]",
+  "btn_DeleteStore": "button.cy-delete-store-button",
+  "txt_StoreNameToDelete": "input#storeName",
+  "btn_DeleteStoreConfirm": "//div[@class=\"actions\"]/button[contains(text(),'Delete store')]"
 }

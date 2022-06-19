@@ -10,5 +10,8 @@
   },
   "store": {
     "name": "GelatoStore"
+  },
+  "product": {
+    "name": "Premium Unisex Crewneck T-shirt"
   }
 }

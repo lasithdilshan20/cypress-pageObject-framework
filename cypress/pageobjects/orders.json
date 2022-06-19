@@ -1,0 +1,4 @@
+{
+  "lbl_Draft": "//a[contains(text(),'Draft')]",
+  "tr_row": "tr.order-row"
+}

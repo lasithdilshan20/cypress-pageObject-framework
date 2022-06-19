@@ -1,0 +1,9 @@
+{
+  "design": {
+    "iFrame": "#printFileEditor",
+    "lbl_Text": "div.cy-sidebar-tab-texts",
+    "btn_AddText": "button[class*=ButtonAddText]",
+    "ara_canvas": "#canvas-editor-container",
+    "btn_Continue": "button.cy-continue-btn"
+  }
+}

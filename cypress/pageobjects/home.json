@@ -1,6 +1,9 @@
 {
   "signIn": ".login-btn",
   "NavigationItems": {
-    "Store": "a#sidebar-nav-item-eCommerceStores span"
+    "Store": "a#sidebar-nav-item-eCommerceStores span",
+    "Home": "a#sidebar-nav-item-home span",
+    "Orders": "a#sidebar-nav-item-orders span",
+    "Draft": "//a[contains(text(),'Draft')]"
   }
 }

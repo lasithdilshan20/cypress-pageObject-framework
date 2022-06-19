@@ -66,3 +66,12 @@ export function GetElement(locator) {
         return cy.get(locator);
     }
 }
+
+//export function to  get title and return it
+export function GetIFrameElement(iFrameElement, locator) {
+    return cy.iframe(iFrameElement).find(locator);
+}
+
+export function Wait(ms) {
+    cy.wait(ms);
+}
