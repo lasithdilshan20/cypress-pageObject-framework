@@ -1,0 +1,9 @@
+{
+  "userSignIn": {
+    "txt_Username": "#username",
+    "txt_Password": "#password",
+    "btn_LogIn": "#kc-login",
+    "lbl_Title": "#kc-page-title"
+  }
+
+}

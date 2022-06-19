@@ -1,4 +1,8 @@
 /// <reference types="cypress" />
+const TestData = require('../../testdata/testdata.json');
+const HomePage = require('../../pageobjects/home.json');
+const LoginPage = require('../../pageobjects/login.json');
+const DashboardPage = require('../../pageobjects/dashboard.json');
 
 describe('example to-do app', () => {
   beforeEach(() => {
@@ -10,15 +14,15 @@ describe('example to-do app', () => {
   })
 
   it('Verify the log in to the application', () => {
-    cy.title().should('eq', 'Global Print On Demand Platform | Gelato');
-    cy.get('.login-btn').click();
-    cy.get('#username').should('be.visible');
-    cy.get('#username').type('lasithdilshan20@gmail.com');
-    cy.get('#password').type('Lasithdilshan20@');
-    cy.get('#kc-login').click();
-    cy.xpath('//*[contains(text(),"Welcome Lasitha Wijenayake")]').should('be.visible');
-    cy.get('nav div#user-info').click();
-    cy.xpath('//*[contains(text(),"Sign Out")]').click();
-    cy.get('#kc-page-title').should('contains.text', 'Sign in to Gelato');
+    cy.title().should('eq', TestData.homePage.title);
+    cy.get(HomePage.signIn).click();
+    cy.get(LoginPage.userSignIn.txt_Username).should('be.visible');
+    cy.get(LoginPage.userSignIn.txt_Username).type(TestData.user.email);
+    cy.get(LoginPage.userSignIn.txt_Password).type(TestData.user.password,{ log: false });
+    cy.get(LoginPage.userSignIn.btn_LogIn).click();
+    cy.xpath('//*[contains(text(),"Welcome '+(TestData.user.name)+'")]').should('be.visible');
+    cy.get(DashboardPage.userInfo.lbl_UserInfo).click();
+    cy.xpath(DashboardPage.userInfo.btn_SingOut).click();
+    cy.get(LoginPage.userSignIn.lbl_Title).should('contains.text', TestData.user.title);
   })
 })
