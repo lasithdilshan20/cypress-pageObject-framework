@@ -1,6 +1,8 @@
 {
   "userInfo": {
     "lbl_UserInfo": "nav div#user-info",
-    "btn_SingOut": "//*[contains(text(),'Sign Out')]"
+    "btn_SingOut": "//*[contains(text(),'Sign Out')]",
+    "btn_NewOrder": "a.header-btn"
+
   }
 }

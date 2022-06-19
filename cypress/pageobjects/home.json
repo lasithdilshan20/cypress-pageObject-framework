@@ -1,3 +1,6 @@
 {
-  "signIn": ".login-btn"
+  "signIn": ".login-btn",
+  "NavigationItems": {
+    "Store": "a#sidebar-nav-item-eCommerceStores span"
+  }
 }

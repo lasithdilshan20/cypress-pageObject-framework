@@ -1,0 +1,8 @@
+{
+  "lbl_Title": "//*[contains(text(),'Connect a new store')]",
+  "btn_CreateManualStore": "//div[@title=\"Manual\"] /..//following::a[contains(text(),'Create')]",
+  "txt_name": "//input[@name=\"name\" and @placeholder=\"Store name\"]",
+  "btn_AddStore": "//button[contains(text(),'Add store')]",
+  "lbl_StoreTitle": "div.page-title",
+  "btn_AddProduct": "(//button[contains(text(),\"Add product\")])[1]"
+}

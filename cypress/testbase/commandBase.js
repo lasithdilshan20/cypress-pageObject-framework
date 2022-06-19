@@ -18,19 +18,13 @@ export function Click(locator)
 {
     if(locator.includes('//')) {
         cy.xpath(locator).then(($element) => {
-            if($element.is(":visible"))
                 cy.xpath(locator).click();
-            else
-                cy.xpath(locator).click({force:true});
         })
     }
     else
     {
         cy.get(locator).then(($element) => {
-            if($element.is(":visible"))
                 cy.get(locator).click();
-            else
-                cy.get(locator).click({force:true});
         })
     }
 }
@@ -45,19 +39,13 @@ export function Fill(locator, text)
 {
     if(locator.includes('//')) {
         cy.xpath(locator).then(($element) => {
-            if($element.is(":visible"))
                 cy.xpath(locator).type(text);
-            else
-                cy.xpath(locator).type(text,{force:true});
         })
     }
     else
     {
         cy.get(locator).then(($element) => {
-            if($element.is(":visible"))
                 cy.get(locator).type(text);
-            else
-                cy.get(locator).type(text,{force:true});
         })
     }
 }
@@ -69,5 +57,12 @@ export function GetTitle() {
 
 //get element and return it to assert
 export function GetElement(locator) {
-    return cy.get(locator);
+
+    if(locator.includes('//')) {
+        return cy.xpath(locator);
+    }
+    else
+    {
+        return cy.get(locator);
+    }
 }

@@ -1,0 +1,18 @@
+{
+  "AddProduct": {
+    "btn_AddProduct": "//button[contains(text(),'Add product')]",
+    "btn_StartDesigning": "//button[contains(text(),'Start Designing')]",
+    "lbl_MensClothing": "#mens-clothing",
+    "lbl_TShirtsMen": "#t-shirts-men",
+    "lbl_Premium": "#premium-unisex-crewneck-t-shirt",
+    "lbl_Size": "gd-product-control-garment-size button",
+    "btn_More": "gc-dropdown-menu button",
+    "btn_AddToStore": "//*[contains(text(),' Add product to store')]"
+  },
+    "DesignProduct": {
+      "lbl_AddText": "div.cy-sidebar-tab-texts",
+      "btn_AddText": "button[class*=ButtonAddText]",
+      "btn_Save": "a.save-button",
+      "btn_Review": "#cy-design-errors-modal button"
+    }
+}
