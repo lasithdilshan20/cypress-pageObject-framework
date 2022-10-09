@@ -24,7 +24,7 @@ describe('Gelato Test Automation', () => {
     return false
   })
 
-  it('Verify the log in to the application', () => {
+  it.only('Verify the log in to the application', () => {
     I_GetContainsText("Welcome "+(TestData.user.name)).should('be.visible');
     I.GetElement(DashboardPage.userInfo.lbl_UserInfo).should('be.visible');
     I_GetContainsText("Welcome "+(TestData.user.name)).should('be.visible');

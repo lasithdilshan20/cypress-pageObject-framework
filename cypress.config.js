@@ -1,4 +1,5 @@
-const { defineConfig } = require('cypress')
+const { defineConfig } = require('cypress');
+const cypressReplay = require("@replayio/cypress");
 
 module.exports = defineConfig({
   retries: 1,
@@ -17,11 +18,13 @@ module.exports = defineConfig({
   experimentalSourceRewriting: false,
   followRedirect: false,
   chromeWebSecurity: false,
+  screenshotOnRunFailure: false,
   e2e: {
     // We've imported your old cypress plugins here.
     // You may want to clean this up later by importing these.
     setupNodeEvents(on, config) {
-      return require('./cypress/plugins/index.js')(on, config)
+      cypressReplay.default(on, config);
+      return config;
     },
     baseUrl: 'https://www.gelato.com/en-US/',
   },
