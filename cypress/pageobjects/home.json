@@ -1,5 +1,5 @@
 {
-  "signIn": ".login-btn",
+  "signIn": "button[aria-label=\"SIGN IN\"]",
   "NavigationItems": {
     "Store": "a#sidebar-nav-item-eCommerceStores span",
     "Home": "a#sidebar-nav-item-home span",

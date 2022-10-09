@@ -9,7 +9,7 @@ export function I_GetContainsText(text) {
 }
 
 export function I_LoginToApplication(email,password) {
-    I.GetTitle().should('eq', TestData.homePage.title);
+    I.GetTitle().should('contain', TestData.homePage.title);
     I.Click(HomePage.signIn);
     I.GetElement(LoginPage.userSignIn.txt_Username).should('be.visible');
     I.Fill(LoginPage.userSignIn.txt_Username,email);

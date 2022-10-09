@@ -28,8 +28,6 @@ describe('Gelato Test Automation', () => {
     I_GetContainsText("Welcome "+(TestData.user.name)).should('be.visible');
     I.GetElement(DashboardPage.userInfo.lbl_UserInfo).should('be.visible');
     I_GetContainsText("Welcome "+(TestData.user.name)).should('be.visible');
-   /* I.Click(DashboardPage.userInfo.btn_SingOut);
-    I.GetElement(LoginPage.userSignIn.lbl_Title).should('contains.text', TestData.user.title);*/
   })
 
   it('Verify the user can add a store', () => {

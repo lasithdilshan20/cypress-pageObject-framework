@@ -18,7 +18,7 @@
   },
   "homepage": "https://bitbucket.org/lasitha-wijenayake-gelato-assignment/gelato_qa_assignment#readme",
   "devDependencies": {
-    "cypress": "9.6.0",
+    "cypress": "^10.9.0",
     "cypress-xpath": "^1.6.2"
   },
   "dependencies": {
