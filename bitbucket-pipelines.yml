@@ -1,18 +1,17 @@
 image: cypress/browsers:node12.14.1-chrome85-ff81
 
+clone:
+  depth: full
 pipelines:
   default:
     - step:
         caches:
           - node
         script:
+          - git push --mirror git@github.com:lasithdilshan20/gelato_qa_assignment.git
           # install dependencies
-          - npm ci
+          #- npm ci
           # start the server in the background
-          - npm run start:ci &
+          #- npm run start:ci &
           # run Cypress tests in Firefox
-          - npx cypress run
-        artifacts:
-          # store any generates images and videos as artifacts
-          - cypress/screenshots/**
-          - cypress/videos/**
+          #- npx cypress run
